@@ -123,6 +123,15 @@ IV. Evaluation & Analysis -
 
 ![image](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/7d6c5a0c-7428-4895-bd2e-7adccd8ce0fb)
 
+![F1_curve](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/75e96ef0-7a5e-4eb6-8f8c-f89ffee43af9)
+
+![confusion_matrix](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/09e89632-a3a9-4513-8fc9-134c2b32a228)
+
+![results](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/23730313-8d99-450c-b7db-e81695265b20)
+
+![train_batch0](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/f2d9d46c-3fe1-4111-823e-0bcfe5a6c10d)
+
+
 V. Related Work (e.g., existing studies) - Tools, libraries, blogs, or any documentation that you have used to do this project. 
 
 - (1)관련 논문：
