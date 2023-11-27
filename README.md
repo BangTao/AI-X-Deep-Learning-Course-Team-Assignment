@@ -18,6 +18,22 @@ Members:
    
 II. Datasets – 이 부분부터는 나중에 하셔도 됩니다. 
 
+**(1) 데이터셋 출처**: 저희 프로젝트에 사용된 "Hard Hat Detection" 데이터셋은 Kaggle에서 다음 링크를 통해 접근할 수 있습니다: https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection/.
+
+(2) 데이터셋 개요: 이 데이터셋은 작업장 안전을 개선하기 위해 5,000개의 경계 상자 주석이 포함된 이미지를 포함하며, 헬멧, 사람 및 머리 등 세 가지 클래스로 분류됩니다.
+
+(3) 데이터 주석 변환:
+	원본 데이터셋은 PASCAL VOC 형식의 경계 상자 주석을 이미 제공합니다.
+	데이터 주석에 대해 더 깊이 학습하고자 우리는 기존의 주석 정보를 사용하지 않고 원본 이미지만을 사용하여 직접 재주석을 진행하기로 결정했습니다.
+	labelimg 도구를 사용하여 'hat'과 'person' 두 클래스에 대한 이미지 재주석을 완료했습니다.
+	주석을 완료한 후, YOLOv5가 인식할 수 있는 txt 형식으로 VOC 형식의 주석 정보를 변환했습니다. 이 변환 과정은 prepare_data.py 스크립트를 사용하여 완료되었으며, 구체적인 코드 및 작업은 GitHub 저장소 https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment에서 확인할 수 있습니다.
+
+![image](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/add3ed45-df39-48f6-85c3-130d6a08509e)
+
+(4) 데이터셋 분할: YOLOv5 모델을 훈련하기 전에 데이터셋을 훈련 세트와 검증 세트로 분할해야 합니다. 이 단계 또한 prepare_data.py 스크립트를 통해 구현되었으며, 데이터의 정확한 분할과 모델 훈련의 효율성을 보장합니다.
+![image](https://github.com/BangTao/AI-X-Deep-Learning-Course-Team-Assignment/assets/42737652/1a1acbf1-3912-4048-a8a0-d8b3564cfb53)
+
+
 III. Methodology -- YOLOv5 알고리즘
 
 YOLOv5는 You Only Look Once (YOLO) 시리즈의 최신 실시간 객체 탐지 알고리즘입니다. 그 속도와 정확도로 유명하며, 자원이 제한된 환경에서의 실시간 응용 프로그램에 특히 적합합니다. YOLOv5는 객체 분류와 위치 지정을 위한 단일 합성곱 신경망(CNN) 패스를 사용합니다. 멀티 스케일 예측과 Path Aggregation Network (PANet)을 통해 탐지 정확도를 향상시켰습니다. 또한, 개선된 앵커 메커니즘, 손실 함수 및 데이터 증강 전략을 도입하여 성능을 더욱 향상시켰습니다. YOLOv5의 이러한 특성들은 건설 안전 모니터링과 같이 빠르고 정확한 탐지가 요구되는 응용 프로그램에 매우 적합합니다.
