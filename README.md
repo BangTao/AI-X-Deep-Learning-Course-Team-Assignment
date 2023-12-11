@@ -4,10 +4,19 @@ AI+X: Deep Learning Course Team Assignment
 Title:건설 현장 안전 강화: 건설 현장에서 YOLOv5 기반의 딥 러닝 안전 헬멧 감지 
 
 Members: 
+
 （1）하문월, Department: 무용학부, Email: 318yue@naver.com ;
 （2）사경안, Department:경제금융학부, Email: xlq945270@163.com
 （3）이서, Department:건설환경공학, Email: lirui1314-@naver.com;
 （4）사봉개, Department:기계공학부, Email: bb13639806638@163.com;
+
+Division of work and roles of team members (Describe who did what in your group project):
+
+（1）Member 1--하문월 :dataset processing and write up;
+（2）Member 2--사경안 :graph analysis and write up;
+（3）Member 3--이서 : Data collection and youtube clipping
+（4）Member 4--사봉개 : code implementation and YouTube recording;
+
 
  I. Proposal (Option 1)  
  - Motivation: Why are you doing this?
@@ -164,4 +173,9 @@ VI. Conclusion: Discussion
 
 YOLOv5 딥 러닝 모델은 건설 현장의 안전을 강화하기 위한 안전모 실시간 감지에서 상당한 잠재력을 보여주었습니다. 우리의 평가에 따르면, 이 모델은 높은 정밀도와 높은 재현율을 가지고 있어 안전 규정 준수를 보장하는 데 필수적인, 안전모를 착용한 근로자와 착용하지 않은 근로자를 신뢰성 있게 구분할 수 있음을 나타냅니다. 다양한 IoU 임계값에서 높은 평균 정밀도는 객체가 겹치거나 부분적으로 가려진 상황에서도 모델의 예측이 일관되고 정확함을 시사합니다. 그러나 '모자'와 '배경' 범주 간의 경미한 혼동은 개선 가능한 영역을 지적하며, 이는 훈련 데이터 세트의 다양화나 전처리 기술의 개선을 통해 해결될 수 있습니다. 전반적으로, YOLOv5 모델의 강력한 성능은 자동 안전 감시의 유효한 도구로서의 잠재력을 강조하며, 건설 현장에서 머리 부상을 방지하고 안전 문화를 조성하는 데 중요한 역할을 할 수 있습니다. 미래를 향해, 추가 연구는 이 모델을 기존 감시 시스템에 통합하는 방법, 환경 요소가 감지 정확성에 미치는 영향 및 현장 안전 관리를 더욱 지원하기 위한 실시간 경보 시스템 개발을 탐구할 수 있습니다.
 
+#Division of work and roles of team members (Describe who did what in your group project):
 
+（1）Member 1--하문월 :dataset processing and write up;
+（2）Member 2--사경안 :graph analysis and write up;
+（3）Member 3--이서 : Data collection and youtube clipping
+（4）Member 4--사봉개 : code implementation and YouTube recording;
